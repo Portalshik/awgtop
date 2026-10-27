@@ -10,7 +10,7 @@ if [ ! -x .venv/bin/python ]; then
 fi
 
 # Устанавливаем зависимости
-.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python -m .venv/bin/pip install -r requirements.txt
 
 # Добавляем alias в bashrc
 echo "alias awgtop='~/awgtop/.venv/bin/python ~/awgtop/awgtop.py; cd ~/'" >> ~/.bashrc
